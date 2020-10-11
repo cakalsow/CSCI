@@ -1,0 +1,150 @@
+Prelude> [ -5,3, 20, 0, 15, 9, 2 ]
+[-5,3,20,0,15,9,2]
+Prelude> :type it
+it :: [Integer]
+Prelude> [ 3.5, 7, 0, 2, -8.9 ]
+[3.5,7.0,0.0,2.0,-8.9]
+Prelude> :type it
+it :: [Double]
+Prelude> [ True, False, True, True ]
+[True,False,True,True]
+Prelude> :type it
+it :: [Bool]
+Prelude> [ True, 2, 7, False ]
+
+<interactive>:10:9:
+    No instance for (Num Bool) arising from the literal `2'
+    Possible fix: add an instance declaration for (Num Bool)
+    In the expression: 2
+    In the expression: [True, 2, 7, False]
+    In an equation for `it': it = [True, 2, 7, ....]
+Prelude> [ 't', 'h', 'i', 's' ]
+"this"
+Prelude> :type it
+it :: [Char]
+Prelude> [ "this", "is", "it" ]
+["this","is","it"]
+Prelude> :type it
+it :: [[Char]]
+Prelude> [ 'I', 'am', 'ready' ]
+
+<interactive>:15:8:
+    Syntax error on 'am'
+    Perhaps you intended to use -XTemplateHaskell
+Prelude> [ 'I', "am", "ready" ]
+
+<interactive>:16:8:
+    Couldn't match expected type `Char' with actual type `[Char]'
+    In the expression: "am"
+    In the expression: ['I', "am", "ready"]
+    In an equation for `it': it = ['I', "am", "ready"]
+
+<interactive>:16:14:
+    Couldn't match expected type `Char' with actual type `[Char]'
+    In the expression: "ready"
+    In the expression: ['I', "am", "ready"]
+    In an equation for `it': it = ['I', "am", "ready"]
+Prelude> [ "I", "am", "ready" ]
+["I","am","ready"]
+Prelude> :type it
+it :: [[Char]]
+Prelude> [ "" ]
+[""]
+Prelude> :type it
+it :: [[Char]]
+Prelude> []
+[]
+Prelude> :type it
+it :: [a]
+Prelude> [[ 1, 2, 3 ], [ 4, 5, 6 ], [ 7.5, 8.2, 9 ]]
+[[1.0,2.0,3.0],[4.0,5.0,6.0],[7.5,8.2,9.0]]
+Prelude> :type it
+it :: [[Double]]
+Prelude> :load StarterCode.lhs
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list2_1
+[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10]
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list2_2
+[19,17,15,13,11,9,7,5,3,1]
+*StarterCode> list2_3
+"abcdefghijklmnopqrstuvwxyz"
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list2_4
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+*StarterCode> list2_5
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz"
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list2_6
+""
+*StarterCode> list2_7
+[0.3333333333333333,0.6666666666666666,1.0,1.3333333333333335,1.666666666666667,2.0000000000000004,2.333333333333334,2.6666666666666674,3.000000000000001,3.3333333333333344,3.666666666666668,4.000000000000002]
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list3_1
+[1,2,3,4,5,5,4,3,2,1]
+*StarterCode> list3_2
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list3_3
+"abcdefghijklmnopqrstuvwxyz123456789"
+*StarterCode> list4_2
+[1.0,1.4142135623730951,1.7320508075688772,2.0,2.23606797749979,2.449489742783178,2.6457513110645907,2.8284271247461903,3.0,3.1622776601683795]
+*StarterCode> list4_3
+[1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072,262144,524288,1048576,2097152,4194304,8388608,16777216,33554432,67108864,134217728,268435456,536870912,1073741824,2147483648,4294967296,8589934592,17179869184,34359738368,68719476736,137438953472,274877906944,549755813888,1099511627776]
+*StarterCode> list4_4
+[0.0,0.7853981633974483,1.5707963267948966,2.356194490192345,3.141592653589793,3.9269908169872414,4.71238898038469,5.497787143782138,6.283185307179586]
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> list5_1
+[0.0,0.3333333333333333,0.6666666666666666,1.0,1.3333333333333333,1.6666666666666667,2.0,2.3333333333333335,2.6666666666666665,3.0,3.3333333333333335,3.6666666666666665,4.0]
+*StarterCode> list5_2
+[2,3,4,6,8,9,10,12,14,15,16,18,20]
+*StarterCode> list5_3
+"bcdfghjklmnpqrstvwxyz"
+*StarterCode> list6_1
+[(0,0,0),(0,1,0),(0,2,0),(0,3,0),(0,4,0),(1,0,0),(1,1,1),(1,2,2),(1,3,3),(1,4,4),(2,0,0),(2,1,2),(2,2,4),(2,3,6),(2,4,8),(3,0,0),(3,1,3),(3,2,6),(3,3,9),(3,4,12),(4,0,0),(4,1,4),(4,2,8),(4,3,12),(4,4,16)]
+*StarterCode> list6_2
+[(0.0,0.0),(1.0,1.0),(2.0,1.4142135623730951),(3.0,1.7320508075688772),(4.0,2.0),(5.0,2.23606797749979),(6.0,2.449489742783178),(7.0,2.6457513110645907),(8.0,2.8284271247461903),(9.0,3.0),(10.0,3.1622776601683795)]
+*StarterCode> list6_3
+[(1.0,-2.3025850929940455),(1.1,-2.2072749131897207),(1.2000000000000002,-2.120263536200091),(1.3000000000000003,-2.040220828526554),(1.4000000000000004,-1.9661128563728325),(1.5000000000000004,-1.897119984885881),(1.6000000000000005,-1.8325814637483098),(1.7000000000000006,-1.771956841931875),(1.8000000000000007,-1.7147984280919262),(1.9000000000000008,-1.6607312068216504),(2.000000000000001,-1.6094379124340998),(2.100000000000001,-1.560647748264668),(2.200000000000001,-1.514127732629775),(2.300000000000001,-1.4696759700589412),(2.4000000000000012,-1.4271163556401452),(2.5000000000000013,-1.3862943611198901),(2.6000000000000014,-1.3470736479666088),(2.7000000000000015,-1.3093333199837618),(2.8000000000000016,-1.2729656758128869),(2.9000000000000017,-1.2378743560016168),(3.0000000000000018,-1.2039728043259355)]
+*StarterCode> mySum [ 1, 2, 3, 4, 5 ]
+15
+*StarterCode> mySum list5_1
+26.0
+*StarterCode> :type mySum
+mySum :: Num a => [a] -> a
+*StarterCode> myMean [ 1, 2, 3, 4, 5 ]
+3.0
+myMean :: Fractional t => [t] -> t
+*StarterCode> myMean list2_2
+*StarterCode> vowelCount1 list3_3
+5
+*StarterCode> vowelCount1 list3_2
+5
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> vowelCount2 list3_3
+5
+*StarterCode> squaresDown 0
+[]
+*StarterCode> squaresDown 4
+[16,9,4,1]
+*StarterCode> squaresDown 15
+[225,196,169,144,121,100,81,64,49,36,25,16,9,4,1]
+*StarterCode> negList list3_1
+[-1,-2,-3,-4,-5,-5,-4,-3,-2,-1*** Exception: StarterCode.lhs:141:3-37: Non-exhaustive patterns in function negList
+
+

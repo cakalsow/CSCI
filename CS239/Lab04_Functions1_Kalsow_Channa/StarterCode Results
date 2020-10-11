@@ -1,0 +1,81 @@
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> quadRoots1 1 5 4
+(-1.0,-4.0)
+*StarterCode> quadRoots1 1 4 4
+(-2.0,-2.0)
+*StarterCode> quadRoots1 1 6 10
+(NaN,NaN)
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> quadRoots2 1 5 4
+((-1.0,0),(-4.0,0))
+*StarterCode> quadRoots2 1 4 4
+((-2.0,0),(-2.0,0))
+*StarterCode> quadRoots2 1 6 10
+((NaN,0),(NaN,0))
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> quadRoots3 1 5 4
+((-1.0,0.0),(-4.0,0.0))
+*StarterCode> quadRoots3 1 4 4
+((-2.0,0.0),(-2.0,0.0))
+*StarterCode> quadRoots3 1 6 10
+((-3.0,1.0),(-3.0,-1.0))
+*StarterCode> quadRoots2 0 5 4
+((NaN,0),(-Infinity,0))
+*StarterCode> quadRoots3 0 5 4
+((NaN,0.0),(-Infinity,0.0))
+*StarterCode> quadRoots3 1 0 6
+((-0.0,2.449489742783178),(-0.0,-2.449489742783178))
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> maxList [ 0, 1, 2 ]
+2
+*StarterCode> maxList [ 22, 55, 33 ]
+55
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> median1st3 [ 1 ]
+1
+*StarterCode> median1st3 [ 1, 2 ]
+1
+*StarterCode> median1st3 [ 2, 3, 1 ]
+2
+*StarterCode> median1st3 [ 3, 1, 2, 4 ]
+2
+Prelude> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> medianAll3s [ 1, 2, 3, 6, 5, 9 ]
+[2,6]
+*StarterCode> medianAll3s [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+[1,1,1,1]
+*StarterCode> medianAll3s []
+[]
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> medianOfMedian3s [1]
+1
+*StarterCode> medianOfMedian3s [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+5
+*StarterCode> splitList [1, 2, 3, 4, 5, 6]
+([1,3,5],[2,4,6])
+*StarterCode> :reload
+[1 of 1] Compiling StarterCode      ( StarterCode.lhs, interpreted )
+Ok, modules loaded: StarterCode.
+*StarterCode> mergeLists [1, 2, 3] [4, 5, 6]
+[1,2,3,4,5,6]
+*StarterCode> mergeLists [] [1]
+[1]
+*StarterCode> mergeLists [1] []
+[1]
+*StarterCode> mergeLists [4, 5, 6] [3, 2, 1]
+[3,2,1,4,5,6]
+

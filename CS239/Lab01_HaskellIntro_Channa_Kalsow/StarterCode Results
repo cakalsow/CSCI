@@ -1,0 +1,101 @@
+*Main> :reload
+[1 of 1] Compiling Main             ( StarterCode.lhs, interpreted )
+Ok, modules loaded: Main.
+*Main> quadpoly 1.0 0.0 1.0 (-2.0)
+5.0
+*Main> quadpoly 1.0 0.0 1.0 0.0
+1.0
+*Main> :reload
+[1 of 1] Compiling Main             ( StarterCode.lhs, interpreted )
+Ok, modules loaded: Main.
+*Main> poly1 (-5.0)
+207.0
+*Main> poly1 (-4.0)
+155.0
+*Main> poly1 (-3.0)
+109.0
+*Main> poly1 (-2.0)
+69.0
+*Main> poly1 (-1.0)
+35.0
+*Main> poly1 0
+7
+*Main> poly1 1
+-15
+*Main> poly1 2
+-31
+*Main> poly1 3
+-41
+*Main> poly1 4
+-45
+*Main> poly1 5
+-43
+*Main> poly1 0.5
+-4.75
+*Main> poly1 0.25
+0.9375
+*Main> poly1 0.3
+-0.23000000000000043
+*Main> poly1 0.29
+2.300000000000857e-3
+*Main> poly1 0.28
+0.23519999999999897
+*Main> poly1 0.291
+-2.0956999999999226e-2
+*Main> poly1 0.281
+0.21188299999999938
+*Main> poly1 0.285
+0.11867500000000053
+*Main> poly1 0.288
+4.8832000000000875e-2
+*Main> poly1 0.286
+9.53880000000007e-2
+*Main> poly1 0.289
+2.5563000000000002e-2
+*Main> poly1 0.290
+2.300000000000857e-3
+*Main> :reload
+[1 of 1] Compiling Main             ( StarterCode.lhs, interpreted )
+Ok, modules loaded: Main.
+*Main> poly2 (-5.0)
+-130.359375
+*Main> poly2 (-4.0)
+-69.359375
+*Main> poly2 (-3.0)
+-32.359375
+*Main> poly2 (-2.0)
+-13.359375
+*Main> poly2 (-1.0)
+-6.359375
+*Main> poly2 0
+-5.359375
+*Main> poly2 1
+-4.359375
+*Main> poly2 2
+2.640625
+*Main> poly2 3
+21.640625
+*Main> poly2 4
+58.640625
+*Main> poly2 5
+119.640625
+*Main> poly2 1.5
+-1.984375
+*Main> poly2 1.75
+0.0
+*Main> poly2 1.750
+0.0
+*Main> :reload
+[1 of 1] Compiling Main             ( StarterCode.lhs, interpreted )
+Ok, modules loaded: Main.
+*Main> triangle 1 1 2
+"This triangle is isoceles."
+*Main> triangle 1 2 1
+"This triangle is isoceles."
+*Main> triangle 2 1 1
+"This triangle is isoceles."
+*Main> triangle 1 2 3
+"This triangle is scalene."
+*Main> triangle 1 1 1
+"This triangle is equilateral."
+
